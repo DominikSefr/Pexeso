@@ -1,0 +1,236 @@
+﻿@page
+@model Pexeso.Pages.GameModel
+@{
+    ViewData["Title"] = "Game";
+}
+<body>
+    <h2>Game</h2>
+    <table>
+        <tbody>
+            <tr>
+                @if (Model._service.Cards[0].Revealed == true)
+                {
+                    for (int j = 1; j < 16; j += 2)
+                    {
+                        if (Model._service.Cards[0].Id == j | Model._service.Cards[0].Id == j + 1)
+                        {          
+                            <td>@j</td>
+                        }
+                    }
+                }
+                @if (Model._service.Cards[0].Revealed == false)
+                {
+                    <td><a asp-page-handler="Click" asp-route-j="0"><img src="~/images/black.jpg" /></a></td>}
+                @if (Model._service.Cards[1].Revealed == true)
+                {
+                    for (int j = 1; j < 16; j += 2)
+                    {
+                        if (Model._service.Cards[1].Id == j | Model._service.Cards[1].Id == j + 1)
+                        {
+                            
+                            <td>@j</td>
+                        }
+                    }
+                }
+                @if (Model._service.Cards[1].Revealed == false)
+                {
+                    <td><a asp-page-handler="Click" asp-route-j="1"><img src="~/images/black.jpg" /></a></td>}
+                @if (Model._service.Cards[2].Revealed == true)
+                {
+                    for (int j = 1; j < 16; j += 2)
+                    {
+                        if (Model._service.Cards[2].Id == j | Model._service.Cards[2].Id == j + 1)
+                        {
+                            
+                            <td>@j</td>
+                        }
+                    }
+                }
+                @if (Model._service.Cards[2].Revealed == false)
+                {
+                    <td><a asp-page-handler="Click" asp-route-j=2><img src="~/images/black.jpg" /></a></td>}
+                @if (Model._service.Cards[3].Revealed == true)
+                {
+                    for (int j = 1; j < 16; j += 2)
+                    {
+                        if (Model._service.Cards[3].Id == j | Model._service.Cards[3].Id == j + 1)
+                        {
+                            
+                            <td>@j</td>
+                        }
+                    }
+                }
+                @if (Model._service.Cards[3].Revealed == false)
+                {
+                    <td><a asp-page-handler="Click" asp-route-j="3"><img src="~/images/black.jpg" /></a></td>}
+            </tr>
+            <tr>
+                @if (Model._service.Cards[4].Revealed == true)
+                {
+                    for (int j = 1; j < 16; j += 2)
+                    {
+                        if (Model._service.Cards[4].Id == j | Model._service.Cards[4].Id == j + 1)
+                        {
+                            <td>@j</td>
+                        }
+                    }
+                }
+                @if (Model._service.Cards[4].Revealed == false)
+                {
+                    <td><a asp-page-handler="Click" asp-route-j="4"><img src="~/images/black.jpg" /></a></td>}
+                @if (Model._service.Cards[5].Revealed == true)
+                {
+                    for (int j = 1; j < 16; j += 2)
+                    {
+                        if (Model._service.Cards[5].Id == j | Model._service.Cards[5].Id == j + 1)
+                        {                            
+                            <td>@j</td>
+                        }
+                    }
+                }
+                @if (Model._service.Cards[5].Revealed == false)
+                {
+                    <td><a asp-page-handler="Click" asp-route-j="5"><img src="~/images/black.jpg" /></a></td>}
+                @if (Model._service.Cards[6].Revealed == true)
+                {
+                    for (int j = 1; j < 16; j += 2)
+                    {
+                        if (Model._service.Cards[6].Id == j | Model._service.Cards[6].Id == j + 1)
+                        {
+                            <td>@j</td>
+                        }
+                    }
+                }
+                @if (Model._service.Cards[6].Revealed == false)
+                {
+                    <td><a asp-page-handler="Click" asp-route-j="6"><img src="~/images/black.jpg" /></a></td>}
+                @if (Model._service.Cards[7].Revealed == true)
+                {
+                    for (int j = 1; j < 16; j += 2)
+                    {
+                        if (Model._service.Cards[7].Id == j | Model._service.Cards[7].Id == j + 1)
+                        {
+                            <td>@j</td>
+                        }
+                    }
+                }
+                @if (Model._service.Cards[7].Revealed == false)
+                {
+                    <td><a asp-page-handler="Click" asp-route-j="7"><img src="~/images/black.jpg" /></a></td>}
+            </tr>
+            <tr>
+                @if (Model._service.Cards[8].Revealed == true)
+                {
+                    for (int j = 1; j < 16; j += 2)
+                    {
+                        if (Model._service.Cards[8].Id == j | Model._service.Cards[8].Id == j + 1)
+                        {
+                            <td>@j</td>
+                        }
+                    }
+                }
+                @if (Model._service.Cards[8].Revealed == false)
+                {
+                    <td><a asp-page-handler="Click" asp-route-j="8"><img src="~/images/black.jpg" /></a></td>}
+                @if (Model._service.Cards[9].Revealed == true)
+                {
+                    for (int j = 1; j < 16; j += 2)
+                    {
+                        if (Model._service.Cards[9].Id == j | Model._service.Cards[9].Id == j + 1)
+                        {
+                            <td>@j</td>
+                        }
+                    }
+                }
+                @if (Model._service.Cards[9].Revealed == false)
+                {
+                    <td><a asp-page-handler="Click" asp-route-j="9"><img src="~/images/black.jpg" /></a></td>}
+                @if (Model._service.Cards[10].Revealed == true)
+                {
+                    for (int j = 1; j < 16; j += 2)
+                    {
+                        if (Model._service.Cards[10].Id == j | Model._service.Cards[10].Id == j + 1)
+                        {
+                            <td>@j</td>
+                        }
+                    }
+                }
+                @if (Model._service.Cards[10].Revealed == false)
+                {
+                    <td><a asp-page-handler="Click" asp-route-j="10"><img src="~/images/black.jpg" /></a></td>}
+                @if (Model._service.Cards[11].Revealed == true)
+                {
+                    for (int j = 1; j < 16; j += 2)
+                    {
+                        if (Model._service.Cards[11].Id == j | Model._service.Cards[11].Id == j + 1)
+                        {
+                            <td>@j</td>
+                        }
+                    }
+                }
+                @if (Model._service.Cards[11].Revealed == false)
+                {
+                    <td><a asp-page-handler="Click" asp-route-j="11"><img src="~/images/black.jpg" /></a></td>}
+            </tr>
+            <tr>
+                @if (Model._service.Cards[12].Revealed == true)
+                {
+                    for (int j = 1; j < 16; j += 2)
+                    {
+                        if (Model._service.Cards[12].Id == j | Model._service.Cards[12].Id == j + 1)
+                        {
+                            <td>@j</td>
+                        }
+                    }
+                }
+                @if (Model._service.Cards[12].Revealed == false)
+                {
+                    <td><a asp-page-handler="Click" asp-route-j="12"><img src="~/images/black.jpg" /></a></td>}
+                @if (Model._service.Cards[13].Revealed == true)
+                {
+                    for (int j = 1; j < 16; j += 2)
+                    {
+                        if (Model._service.Cards[13].Id == j | Model._service.Cards[13].Id == j + 1)
+                        {
+                            <td>@j</td>
+                        }
+                    }
+                }
+                @if (Model._service.Cards[13].Revealed == false)
+                {
+                    <td><a asp-page-handler="Click" asp-route-j="13"><img src="~/images/black.jpg" /></a></td>}
+                @if (Model._service.Cards[14].Revealed == true)
+                {
+                    for (int j = 1; j < 16; j += 2)
+                    {
+                        if (Model._service.Cards[14].Id == j | Model._service.Cards[14].Id == j + 1)
+                        {
+                            <td>@j</td>
+                        }
+                    }
+                }
+                @if (Model._service.Cards[14].Revealed == false)
+                {
+                    <td><a asp-page-handler="Click" asp-route-j="14"><img src="~/images/black.jpg" /></a></td>}
+                @if (Model._service.Cards[15].Revealed == true)
+                {
+                    for (int j = 1; j < 16; j += 2)
+                    {
+                        if (Model._service.Cards[15].Id == j | Model._service.Cards[15].Id == j + 1)
+                        {
+                            <td>@j</td>
+                        }
+                    }
+                }
+                @if (Model._service.Cards[15].Revealed == false)
+                {
+                    <td><a asp-page-handler="Click" asp-route-j="15"><img src="~/images/black.jpg" /></a></td>}
+            </tr>
+        </tbody>
+    </table>
+    <a asp-page-handler="CheckSame">Check</a>
+    @if(Model._db.Pole.Find(1).score == 3)
+    {
+        <a asp-page="Win">Vyhrál jsi</a>
+    }
+</body>
